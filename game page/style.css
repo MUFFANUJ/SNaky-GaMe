@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Ubuntu&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background: url("../images/2023\ level\ walpaper.webp");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  position: absolute;
+  color: rgb(244, 9, 185);
+  font-weight: 800;
+  font-size: 450%;
+  top: 7vh;
+  font-family: "Rubik Doodle Shadow";
+}
+#scoreBox {
+  position: absolute;
+  bottom: 14vh;
+  font-size: 250%;
+  color: white;
+  font-weight: bolder;
+  right: 14vw;
+}
+#highScoreBox {
+  position: absolute;
+  bottom: 8vh;
+  right: 10vw;
+  font-size: 250%;
+  color: white;
+  font-weight: 800;
+}
+#board {
+  background: linear-gradient(grey, rgb(8, 8, 8),white
+  );
+  height: 60vh;
+  width: 35vw;
+  border: 2px white solid;
+  border-radius: 13px;
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-template-rows:repeat(18,1fr);
+} 
+.head {
+  background: linear-gradient(rgb(123, 3, 175),rgb(241, 111, 11));
+  border: 3px solid white;
+  border-radius: 50%;
+  transform: scale(1.23);
+}
+
+.snakeBody {
+  background-color: rgb(226, 13, 120);
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.food {
+  background-color:rgb(226, 13, 120);
+  border: 3px solid white;
+  border-radius: 7px;
+}
